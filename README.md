@@ -1,1 +1,1 @@
-(rust-wasm)[https://rustwasm.github.io/docs/book/introduction.html#rust--and-webassembly-]
+[rust-wasm](https://rustwasm.github.io/docs/book/introduction.html#rust--and-webassembly-)
