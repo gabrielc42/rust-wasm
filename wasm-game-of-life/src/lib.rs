@@ -28,6 +28,7 @@ pub struct Universe {
     cells: Vec<Cell>,
 }
 
+// public methods, exported to Javascript
 #[wasm_bindgen]
 impl Universe {
     pub fn tick(&mut self) {
@@ -84,6 +85,18 @@ impl Universe {
 
     pub fn render(&self) -> String {
         self.to_string()
+    }
+
+    pub fn width(&self) -> u32 {
+        self.width
+    }
+
+    pub fn height(&self) -> u32 {
+        self.height
+    }
+
+    pub fn cells(&self) -> *const Cell {
+        self.cells.as_ptr()
     }
 }
 
